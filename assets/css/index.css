@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    height: auto;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+body {
+    background: white;
+    line-height: 1.8;
+    position: relative;
+}
+
+.sun__main {
+    background: white;
+    height: 1000px;
+    position: relative;
+    width: 100%;
+}
