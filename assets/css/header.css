@@ -1,0 +1,284 @@
+#sun-header {
+    background-color: white;
+    display: flex;
+    height: 98.67px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-shadow__div {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    height: 0.5px;
+    position: sticky;
+    top: 98.67px;
+    width: 100%;
+    z-index: 1;
+}
+
+.wrapper__header {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    max-width: 1140px;
+    width: 100%;
+}
+
+#sun-header .wrapper__div {
+    column-gap: 53px;
+    display: flex;
+    height: 100%;
+}
+
+.sun-nav__nav {
+    height: 100%;
+}
+
+.sun-nav__ul li:first-of-type a {
+    color: #c01111;
+}
+
+.header__ul--styled {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.sun-nav__ul {
+    column-gap: 35px;
+    margin-bottom: 2px;
+}
+
+.sun-nav__ul li {
+    height: 100%;
+}
+
+.sun-nav__ul li:first-of-type a::after {
+    opacity: 1 !important;
+    top: 0 !important;
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        top: -5px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes floatOut {
+    0% {
+        opacity: 1;
+        top: 0;
+    }
+
+    100% {
+        opacity: 0;
+        top: -5px;
+    }
+}
+
+.sun-nav__ul li a {
+    align-items: center;
+    color: #433246;
+    display: flex;
+    font-size: 14px;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+}
+
+.sun-nav__ul li a:hover {
+    color: #c01111;
+}
+
+.sun-nav__ul li a::after {
+    background: #c01111;
+    border-radius: 10px;
+    content: "";
+    height: 6px;
+    margin: 0 20%;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    width: 60%;
+}
+
+.sun-nav__ul li a:hover::after {
+    animation: floatIn 0.2s linear forwards;
+}
+
+.sun-nav__ul li a:not(:hover)::after {
+    animation: floatOut 0.2s linear forwards;
+}
+
+.sun-logo__image {
+    margin-bottom: 8px;
+    object-fit: cover;
+    width: 98px;
+}
+
+.sun-header__section {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 10px;
+}
+
+.lang__ul li {
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+.lang__button {
+    color: #949ba4;
+    font-size: 14px;
+    list-style: none;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.lang__button:hover {
+    color: #c01111;
+}
+
+.lang__ul {
+    column-gap: 6px;
+    padding-right: 7.5px;
+}
+
+.lang__button--highlight {
+    border: 1px solid #c01111;
+    border-radius: 4px;
+    color: #c01111;
+    font-weight: 600;
+    padding: 1px 13px;
+}
+
+.cover-shadow__div {
+    background: white;
+    height: 10px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu-toggle__label {
+    display: none;
+}
+
+.menu-toggle__nav {
+    display: none;
+}
+
+.menu-toggle__checkbox {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .sun-nav__ul {
+        display: none;
+    }
+
+    #sun-header {
+        height: 80px;
+    }
+
+    .header-shadow__div {
+        top: 70.35px;
+    }
+
+    .sun-logo__image {
+        margin-bottom: 0;
+        width: 120px;
+    }
+
+    .menu-toggle__label {
+        background: rgba(0, 0, 0, .05);
+        display: block;
+        font-size: 22px;
+        padding: 2px 8px;
+    }
+
+    .lang__ul {
+        padding-right: 0;
+    }
+
+    .lang__button--highlight {
+        padding: 1px 8px;
+    }
+
+    #sun-header .wrapper__div {
+        column-gap: 30px;
+    }
+
+    .menu-toggle__label {
+        cursor: pointer;
+    }
+
+    .menu-toggle__nav {
+        display: block;
+        height: 0;
+        left: 0px;
+        overflow: hidden;
+        position: fixed;
+        top: 75px;
+        width: 100%;
+    }
+
+    .menu-toggle__item {
+        width: 100%;
+    }
+
+    .menu-toggle__item:first-of-type {
+        background: #c01111;
+        color: white !important;
+    }
+
+    .menu-toggle__checkbox:checked+.menu-toggle__label+.menu-toggle__nav {
+        height: 234px;
+        top: 80px;
+        transition: transform 1s ease forwards;
+    }
+
+    .menu-toggle__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-toggle__item {
+        padding: 8px 16px;
+    }
+
+    .menu-toggle__item:hover {
+        background: #c01111;
+    }
+
+    .menu-toggle__link {
+        color: #433246;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .menu-toggle__link:hover {
+        color: white;
+    }
+
+    .menu-toggle__item:first-of-type .menu-toggle__link {
+        color: white;
+    }
+
+    .menu-toggle__nav {
+        transition: all 0.3s ease;
+    }
+}
