@@ -1,0 +1,131 @@
+.career_section {
+    align-items: center;
+    background-image: url('https://sun-asterisk.vn/wp-content/uploads/2020/11/career-bg.jpg');
+    background-size: cover;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.career_section div {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.career_section::before {
+    background-color: rgba(192, 17, 17, .9);
+    border-radius: 16px;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.career__title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.career--company-name {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.career--company-name::before {
+    background-color: #d82329;
+    border-radius: 50%;
+    content: '';
+    height: 200px;
+    left: 50%;
+    position: absolute;
+    top: 46px;
+    transform: translateX(-50%);
+    width: 200px;
+    z-index: -1;
+}
+
+.career--company-name::after {
+    background-color: #ef3f45;
+    border-radius: 50%;
+    content: '';
+    height: 42px;
+    left: 75px;
+    position: absolute;
+    top: 75px;
+    width: 42px;
+    z-index: 0;
+}
+
+.career-section--title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 80px;
+    text-align: center;
+    width: 100%;
+}
+
+.career--quote {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.career--description {
+    font-size: 24px;
+    text-align: center;
+}
+
+.career__button {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 100%;
+    padding-bottom: 50px;
+    width: 406px;
+}
+
+@media screen and (max-width: 767px) {
+  .career--company-name::after {
+      left: 35px;
+      top: 55px;
+  }
+
+  .career-section--title {
+      font-size: 36px;
+      margin-bottom: 60px;
+  }
+
+  .career--quote {
+      font-size: 20px;
+  }
+
+  .career--description {
+      font-size: 16px;
+  }
+
+  .career-section--title {
+      font-size: 32px;
+  }
+
+  .career--description {
+      font-size: 14px;
+  }
+
+  .career_section {
+      padding: 0 18px;
+  }
+}

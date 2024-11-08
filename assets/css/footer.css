@@ -202,14 +202,14 @@
 
 .sun-join__button {
     background: #c01111;
-    border: 0px;
+    border: 8px solid white;
     border-radius: 100%;
-    bottom: 132px;
+    bottom: 124px;
     color: white;
-    height: 60px;
+    height: 76px;
     position: fixed;
-    right: 32px;
-    width: 60px;
+    right: 24px;
+    width: 76px;
     z-index: 10;
 }
 
@@ -234,9 +234,7 @@
 
     .sun-join__button {
         bottom: 100px;
-        height: 50px;
         right: 20px;
-        width: 50px;
     }
 
     .sun-join__button a {
