@@ -1,0 +1,245 @@
+#sun-footer {
+    align-items: center;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.wrapper__footer {
+    max-width: 1140px;
+    width: 100%;
+}
+
+.wrapper__footer:first-of-type {
+    margin-top: 60px;
+}
+
+.about__section--first {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.about__section--first > div {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.about__section--first > div ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.about__section--first > div ul li a {
+    color: #949ba4;
+    text-decoration: none;
+}
+
+.sun-title_heading {
+    color: #4d5969;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.container__div {
+    position: relative;
+}
+
+.circle__div {
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    height: 38px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    webkit-transform: translate(-50%, -50%);
+    width: 38px;
+}
+
+.about__section--second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: 30px 0;
+}
+
+.about__section--second > div {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.about__section--second > div ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.about__section--first > div ul li a:hover {
+    color: #4d5969;
+    text-decoration: underline;
+    transition: all 0.3s linear;
+}
+
+.about__section--second > div ul li a {
+    color: #949ba4;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.about__section--second > div ul li a:hover {
+    color: #4d5969;
+    text-decoration: underline;
+}
+
+.about__section--second > div ul li {
+    color: #949ba4;
+}
+
+.separator__section {
+    background-color: #bec7d47a;
+    height: 1px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.rights__section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.rights-text__part {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    padding: 10px;
+}
+
+.rights-text__part--first {
+    justify-content: flex-start;
+    min-width: 290px;
+}
+
+.haru-logo {
+    align-items: center;
+    display: flex;
+    height: 75px;
+    padding: 10px;
+}
+
+.rights-text__part--first h2 {
+    color: #949ba4;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rights-text__part--second {
+    column-gap: 30px;
+    justify-content: flex-end;
+}
+
+.sun-social__icon {
+    align-items: center;
+    background-color: #949ba4;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    text-decoration: none;
+    width: 32px;
+}
+
+.sun-social__icon i {
+    transition: all 0.3s linear;
+}
+
+.sun-social__icon:hover {
+    background-color: white;
+}
+
+.sun-social__icon:hover .fa-youtube {
+    color: red;
+}
+
+.sun-social__icon:hover .fa-facebook-f {
+    color: #3b5998;
+}
+
+.sun-social__icon:hover .fa-linkedin-in {
+    color: #0077b5;
+}
+
+.sun-social__title {
+    display: none;
+}
+
+.sun-news__image {
+    object-fit: cover;
+    width: 100%;
+}
+
+.haru-social__icon {
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    padding: 0 10px;
+    width: 75px;
+}
+
+.sun-join__button {
+    background: #c01111;
+    border: 0px;
+    border-radius: 100%;
+    bottom: 132px;
+    color: white;
+    height: 60px;
+    position: fixed;
+    right: 32px;
+    width: 60px;
+    z-index: 10;
+}
+
+.sun-join__button a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 786px) {
+    .about__section--first {
+        grid-template-columns: 1fr;
+    }
+
+    .about__section--second {
+        grid-template-columns: 1fr;
+    }
+
+    .rights-text__part--second {
+        justify-content: flex-start;
+    }
+
+    .sun-join__button {
+        bottom: 100px;
+        height: 50px;
+        right: 20px;
+        width: 50px;
+    }
+
+    .sun-join__button a {
+        font-size: 12px;
+    }
+}
