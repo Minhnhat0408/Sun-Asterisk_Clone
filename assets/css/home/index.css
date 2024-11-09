@@ -30,6 +30,11 @@ a {
     position: relative;
 }
 
+.home__section--row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .home-title__heading {
     color: #2b3441;
     font-size: 40px;
@@ -54,6 +59,15 @@ a {
     }
 
     .home__section--mb2 {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+    }
+
+    .home-title__heading {
+        font-size: 24px;
+    }
+
+    .home__section--row {
+        flex-direction: column;
+        row-gap: 80px;
     }
 }

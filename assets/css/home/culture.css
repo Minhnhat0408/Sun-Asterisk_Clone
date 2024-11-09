@@ -1,0 +1,313 @@
+.culture__section {
+    position: relative;
+}
+
+.culture__section::before {
+    background-color: #ffeff0;
+    border-radius: 50%;
+    content: '';
+    height: 71px;
+    left: -90px;
+    position: absolute;
+    top: 40%;
+    width: 71px;
+}
+
+.culture__box {
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 0 12px;
+    margin-bottom: 70px;
+    min-width: 31%;
+    padding: 24px;
+    position: relative;
+    transition: all .3s;
+}
+
+.culture__section--title {
+    width: fit-content;
+}
+
+.culture__section--title::before {
+    background-color: #c01111;
+    border-radius: 50%;
+    content: '';
+    height: 28px;
+    position: absolute;
+    right: 5%;
+    top: -45px;
+    width: 28px;
+}
+
+.culture__box:hover {
+    border: 1px solid #e4e4e4;
+    transition: all .3s;
+}
+
+.culture__card--image {
+    position: relative;
+}
+
+.culture__card--label {
+    border: 6px solid rgba(255, 255, 255, .5);
+    border-radius: 34px;
+    position: absolute;
+    right: -16px;
+    top: -22px;
+}
+
+.culture__card--label span {
+    background-color: #c01111;
+    border-radius: 34px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0 20px;
+}
+
+.culture__card--image img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.culture-event__content {
+    margin-top: 30px;
+    position: relative;
+}
+
+.culture-event--link {
+    color: #2b3441;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    height: 75px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.culture-event--link:hover {
+    color: #c01111;
+}
+
+.culture-event__content::before {
+    background-color: rgba(228, 228, 228, .4);
+    border-radius: 50%;
+    content: '';
+    height: 38px;
+    left: 2px;
+    position: absolute;
+    top: 12px;
+    transform: translate(-50%, -50%);
+    width: 38px;
+}
+
+.culture-event--description {
+    color: #949ba4;
+    font-size: 14px;
+    font-weight: 400;
+    height: 75px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.culture-event__detail a {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.culture-event__detail--text {
+    color: #c01111;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.culture-event__icon {
+    align-items: center;
+    background-color: rgba(192, 17, 17, .1);
+    border-radius: 50%;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    line-height: 24px;
+    margin-left: 12px;
+    padding: 1px;
+    position: relative;
+    text-align: center;
+    width: 24px;
+}
+
+.culture-event__icon img {
+    width: 12px;
+}
+
+.culture__button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.culture__button a {
+    max-width: 100%;
+    width: 366px;
+}
+
+.slider-container__culture {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.slider-container__culture [type="radio"] {
+    display: none;
+}
+
+input#culture1:checked~.slider {
+    transform: translateX(0);
+}
+
+input#culture2:checked~.slider {
+    transform: translateX(-33%);
+}
+
+input#culture3:checked~.slider {
+    transform: translateX(-66%);
+}
+
+input#culture4:checked~.slider {
+    transform: translateX(-100%);
+}
+
+@keyframes auto-slide-2 {
+    16% {
+        transform: translateX(-33%);
+    }
+
+    33% {
+        transform: translateX(-33%);
+    }
+
+    50% {
+        transform: translateX(-66%);
+    }
+
+    66% {
+        transform: translateX(-66%);
+    }
+
+    80% {
+        transform: translateX(-99%);
+    }
+
+    100% {
+        transform: translateX(-99%);
+    }
+}
+
+.slider-container__culture .arrow__div:hover~.slider {
+    animation: none;
+}
+
+.slider-container__culture:not(:hover) .slider {
+    animation: auto-slide-2 6s infinite;
+    animation-timing-function: ease-in-out;
+    transition: transform 3s ease;
+}
+
+.slider-container__culture input#culture1:checked~.arrow__div #prev-culture1,
+.slider-container__culture input#culture1:checked~.arrow__div #next-culture1 {
+    display: flex;
+}
+
+.slider-container__culture input#culture2:checked~.arrow__div #prev-culture2,
+.slider-container__culture input#culture2:checked~.arrow__div #next-culture2 {
+    display: flex;
+}
+
+.slider-container__culture input#culture3:checked~.arrow__div #prev-culture3,
+.slider-container__culture input#culture3:checked~.arrow__div #next-culture3 {
+    display: flex;
+}
+
+.slider-container__culture input#culture4:checked~.arrow__div #prev-culture4,
+.slider-container__culture input#culture4:checked~.arrow__div #next-culture4 {
+    display: flex;
+}
+
+.slider-container__culture input#culture1:checked~.arrow__div label:not([data-slide="1"]) {
+    display: none;
+}
+
+.slider-container__culture input#culture2:checked~.arrow__div label:not([data-slide="2"]) {
+    display: none;
+}
+
+.slider-container__culture input#culture3:checked~.arrow__div label:not([data-slide="3"]) {
+    display: none;
+}
+
+.slider-container__culture input#culture4:checked~.arrow__div label:not([data-slide="4"]) {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .culture__section {
+        margin-bottom: 95px;
+    }
+
+    .culture__box {
+        min-width: 100%;
+    }
+
+    .culture__button {
+        margin-top: 35px;
+    }
+
+    input#culture1:checked~.slider {
+        transform: translateX(0);
+    }
+
+    input#culture2:checked~.slider {
+        transform: translateX(-108%);
+    }
+
+    input#culture3:checked~.slider {
+        transform: translateX(-216%);
+    }
+
+    input#culture4:checked~.slider {
+        transform: translateX(-324%);
+    }
+
+    @keyframes auto-slide-2 {
+        16% {
+            transform: translateX(-108%);
+        }
+
+        33% {
+            transform: translateX(-108%);
+        }
+
+        50% {
+            transform: translateX(-216%);
+        }
+
+        66% {
+            transform: translateX(-216%);
+        }
+
+        80% {
+            transform: translateX(-324%);
+        }
+
+        100% {
+            transform: translateX(-324%);
+        }
+    }
+}
