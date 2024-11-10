@@ -1,0 +1,29 @@
+.hero__section {
+    align-items: center;
+    display: flex;
+    height: 86vh;
+    left: 0;
+    overflow: hidden;
+    padding-top: 100px;
+    position: absolute;
+    top: -108px;
+    width: 100%;
+}
+
+.hero__section video {
+    width: 100%;
+    z-index: 3;
+}
+
+@media screen and (max-width: 768px) {
+    .hero__section video {
+        height: 425px;
+        object-fit: cover;
+    }
+
+    .hero__section {
+        height: fit-content;
+        padding-top: 80px;
+        top: -90.5px;
+    }
+}
